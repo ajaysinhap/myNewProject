@@ -21,10 +21,10 @@ jobs:
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
 
-      - name: Authenticate with Firebase
-        run: |
-            echo "Logging into Firebase..."
-            echo ${{ secrets.FIREBASE_TOKEN }} | firebase login:ci
+      # - name: Authenticate with Firebase
+      #   run: |
+      #       echo "Logging into Firebase..."
+      #       echo ${{ secrets.FIREBASE_TOKEN }} | firebase login:ci
 
 
       - name: Deploy to Firebase Hosting
