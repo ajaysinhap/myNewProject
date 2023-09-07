@@ -24,8 +24,8 @@ jobs:
       #  name: Configure Firebase CLI with Token
       #   run: firebase use --token "${{ secrets.FIREBASE_TOKEN }}" --add
 
-      - name: Deploy to Firebase Hosting
-        run: firebase deploy --only hosting
+      # - name: Deploy to Firebase Hosting
+      #   run: firebase deploy --only hosting
 
       - name: Complete the Deployment
         run: echo "Firebase deployment complete!"
