@@ -8,8 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
- main
-  branchFirst
+    
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -36,4 +35,3 @@ jobs:
       with:
         branch: gh-pages
         folder: dist/your-angular-project
-
