@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "myapp-d0917": {
+      "hosting": {
+        "myApp": [
+          "myapp-d0917"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "myapp-d0917"
+  }
+}
