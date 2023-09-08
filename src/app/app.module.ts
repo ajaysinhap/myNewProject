@@ -10,6 +10,9 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
 import { getAnalytics, provideAnalytics } from '@angular/fire/analytics'; 
 
 import { environment } from '../environments/environment';
+import { provideFunctions,getFunctions } from '@angular/fire/functions';
+import { provideMessaging,getMessaging } from '@angular/fire/messaging';
+import { providePerformance,getPerformance } from '@angular/fire/performance';
 
 
 @NgModule({
@@ -24,7 +27,7 @@ import { environment } from '../environments/environment';
     provideFirestore(() => getFirestore()),  
     provideAuth(() => getAuth()),  
     provideStorage(() => getStorage()),  
-    provideAnalytics(() => getAnalytics()),
+    provideAnalytics(() => getAnalytics()), provideFunctions(() => getFunctions()), provideMessaging(() => getMessaging()), providePerformance(() => getPerformance()),
 
    
   ],
